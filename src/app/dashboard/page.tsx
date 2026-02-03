@@ -1,11 +1,15 @@
 import Dashboard from "../components/dashboard";
 import Navbar from "../components/navbar";
 
-export default function DashboardPage() {
+export default async function DashboardPage() {
+
+  const res = await fetch("https://gash-foring-server.vercel.app/api/bookings")
+  const data = await res.json()
+
   return (
     <main>
       <Navbar />
-      <Dashboard />
+      <Dashboard bookingsData={data} />
     </main>
   )
 }

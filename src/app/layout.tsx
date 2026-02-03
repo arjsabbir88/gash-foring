@@ -12,28 +12,36 @@ export const metadata: Metadata = {
   description:
     "ঘাসফড়িং ট্যুর অ্যান্ড ট্রাভেল - বাংলাদেশের সেরা ট্যুর প্যাকেজ এবং ট্রাভেল সেবা। দেশের সবচেয়ে সুন্দর দর্শনীয় স্থানগুলি আবিষ্কার করুন।",
   generator: "v0.app",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Gash Foring",
+  },
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
+        url: "/icon-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
       },
       {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/icon-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/icon-192x192.png",
   },
   openGraph: {
     title: "ঘাসফড়িং ট্যুর অ্যান্ড ট্রাভেল",
     description: "বাংলাদেশের সেরা ট্যুর প্যাকেজ এবং ট্রাভেল সেবা",
     type: "website",
   },
+}
+
+export const viewport = {
+  themeColor: "#01573c",
 }
 
 export default function RootLayout({

@@ -1,0 +1,24 @@
+{
+    "name": "Gash Foring - ঘাসফড়িং ট্যুর",
+    "short_name": "Gash Foring",
+    "description": "Tour booking and management system for Gash Foring",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f5f1e8",
+    "theme_color": "#01573c",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

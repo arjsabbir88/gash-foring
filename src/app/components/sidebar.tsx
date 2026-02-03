@@ -1,12 +1,6 @@
 "use client"
 
-import { RefreshCw } from "lucide-react"
-
-interface SidebarProps {
-  onRefresh: () => void
-}
-
-export default function Sidebar({ onRefresh }: SidebarProps) {
+export default function Sidebar() {
   return (
     <aside className="w-64 bg-[#01573c] text-white p-6 hidden sm:block">
       <div className="mb-8 border-b pb-3">
@@ -22,14 +16,6 @@ export default function Sidebar({ onRefresh }: SidebarProps) {
           বুক করা প্যাকেজ
         </button>
       </nav>
-
-      <button
-        onClick={onRefresh}
-        className="w-full mt-8 px-4 py-3 bg-cream/20 hover:bg-cream/30 rounded-lg transition-colors font-medium flex items-center justify-center gap-2"
-      >
-        <RefreshCw size={18} />
-        রিফ্রেশ করুন
-      </button>
     </aside>
   )
 }
