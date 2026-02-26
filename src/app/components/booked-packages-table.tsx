@@ -31,7 +31,6 @@ export default function BookedPackagesTable({ bookings, onBookingsChange }: Prop
   const [deleteId, setDeleteId] = useState<string | null>(null)
   const [isDeleting, setIsDeleting] = useState(false)
 
-  console.log({bookings: bookings})
 
   const handleDelete = async (id: string) => {
     try {

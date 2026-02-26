@@ -36,7 +36,7 @@ export default function BookingForm() {
     setSuccessMessage("")
     setErrorMessage("")
 
-    console.log(formData)
+
 
     try {
       const response = await fetch("https://gash-foring-server.vercel.app/api/bookings", {
